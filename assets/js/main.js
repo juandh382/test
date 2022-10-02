@@ -28,7 +28,7 @@ const localPlayerContainer = document.createElement('div');
 const handleUserPublished = async (user, mediaType) => {
 
   // Subscribe to the remote user when the SDK triggers the "user-published" event.
-  await agoraEngine.subscribe(user, mediaType);
+  await client.subscribe(user, mediaType);
 
   console.log("subscribe success");
 
