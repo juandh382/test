@@ -119,7 +119,7 @@ async function getProcessorInstance() {
 
     try {
       // Initialize the extension and pass in the URL of the Wasm file
-      await processor.init("./wasms");
+      await processor.init("../wasms");
     } catch (e) {
       console.log("Fail to load WASM resource!"); return null;
     }
