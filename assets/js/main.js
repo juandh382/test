@@ -1,5 +1,5 @@
-import AgoraRTC from "agora-rtc-sdk-ng"
-import VirtualBackgroundExtension from "agora-extension-virtual-background";
+import AgoraRTC from "./agora-rtc-sdk-ng.js"
+import VirtualBackgroundExtension from "./agora-extension-virtual-background.js";
 
 const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
 
@@ -122,7 +122,7 @@ async function getProcessorInstance() {
 
     try {
       // Initialize the extension and pass in the URL of the Wasm file
-      await processor.init("./assets/wasms");
+      await processor.init("./wasms");
     } catch (e) {
       console.log("Fail to load WASM resource!"); return null;
     }
