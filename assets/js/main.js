@@ -1,6 +1,3 @@
-import AgoraRTC from "./agora-rtc-sdk-ng.js"
-import VirtualBackgroundExtension from "./agora-extension-virtual-background.js";
-
 const client = AgoraRTC.createClient({ mode: "rtc", codec: "vp8" });
 
 // Create a VirtualBackgroundExtension instance
